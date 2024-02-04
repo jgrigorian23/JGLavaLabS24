@@ -1,5 +1,73 @@
 .App {
-  text-align: center;
+  
+}
+
+body {
+  background-image: radial-gradient(circle, #EFDEFF, white);
+ 
+}
+
+.logo-text {
+  color: #9730FF;
+  position: absolute;
+  font-weight: bold;
+  font: Helvetica;
+  font-size: 32px;
+  width: 65px;
+  left: 72px;
+}
+
+.profile-button {
+  top: 25px;
+  position: fixed;
+  right: 75px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: none;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: transparent;
+  z-index: 999;
+  transition: transform 0.2s ease-in-out;
+  margin: 0; /* Reset margin */
+  padding: 0; /* Reset padding */
+}
+
+.profile-button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 52px;
+  height: 52px;
+  background-color: rgba(0, 0, 0, 0); /* Initial state: transparent */
+  opacity: 0; /* Initially invisible */
+  transition: background-color 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+/* Hover state styles for the overlay */
+.profile-button:hover::after {
+  background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+  opacity: 1; /* Make the overlay visible on hover */
+}
+
+/* add on hover, black film goes over pfp */
+.profile-button img {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+}
+
+.motto-text {
+  font: Helvetica;
+  font-weight: 400;
+  font-size: 48px;
+  position: fixed;
+  width: 586px;
+  height: 77px;
+  top: 259px;
+  left: 71px;
 }
 
 .App-logo {
@@ -14,13 +82,10 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  background-color: white;
+  height: 100px;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
