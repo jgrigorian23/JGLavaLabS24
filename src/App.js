@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import Tools from './Tools.js';
 
+/* Set alerts for buttons to indicate functionality */
 function App() {
   const backClick = () => {
     alert('The back button has been clickified')
@@ -12,9 +13,10 @@ function App() {
   };
 
   const pfpClick = () => {
-    alert('The beautiful profile picture is clickified')
+    alert('The beautiful profile picture has been clickified')
   }
 
+  /* Set up layout of page with header, motto text, tools, back/finish buttons */
   return (
     <div className="App">
       <header className="App-header">

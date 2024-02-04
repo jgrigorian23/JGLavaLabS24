@@ -1,3 +1,4 @@
+/* General parameters for app */
 .App {
   text-align: center;
   overflow-y: auto;
@@ -5,12 +6,14 @@
   width: 100%;
 }
 
+/* Ensure app takes up whole page */
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
 }
 
+/* Container for 8 tools */
 .tools-container {
   display: flex;
   flex-direction: column;
@@ -19,6 +22,7 @@ html, body {
   overflow-y: auto;
 }
 
+/* Create background gradient */
 body {
   background-image: radial-gradient(circle, #EFDEFF, white);
   overflow-y: auto;
@@ -27,6 +31,7 @@ body {
   padding: 0;
 }
 
+/* Hive logo style */
 .logo-text {
   color: #9730FF;
   position: absolute;
@@ -37,6 +42,7 @@ body {
   left: 72px;
 }
 
+/* Style for pfp */
 .profile-button {
   top: 25px;
   position: absolute;
@@ -54,6 +60,7 @@ body {
   padding: 0; /* Reset padding */
 }
 
+/* Style for hovering over pfp */
 .profile-button::after {
   content: '';
   position: absolute;
@@ -66,7 +73,6 @@ body {
   transition: background-color 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
 
-/* Hover state styles for the overlay */
 .profile-button:hover::after {
   background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
   opacity: 1; /* Make the overlay visible on hover */
@@ -79,6 +85,7 @@ body {
   border-radius: 50%;
 }
 
+/* Style for main motto text */
 .motto-text {
   font: Helvetica;
   font-weight: 400;
@@ -91,20 +98,17 @@ body {
   margin-bottom: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
+/* Header style */
 .App-header {
   background-color: white;
   height: 100px;
-  width: 100%;
+  width: 100% !important;
   align-items: center;
   justify-content: center;
   color: white;
 }
 
+/* Style for back button at bottom of page */
 .back-button {
   position: absolute;
   margin-top: 800px;
@@ -122,12 +126,14 @@ body {
   transition: width 0.2s ease-in-out, border 0.2s ease-in-out, background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
+/* Hover style */
 .back-button:hover {
   background-color: #1A1225;
   color: white;
   transition: width 0.2s ease-in-out, border 0.2s ease-in-out, background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
+/* Style for finish button at bottom of page */
 .finish-button {
   position: absolute;
   margin-top: 800px;
@@ -145,8 +151,10 @@ body {
   transition: width 0.2s ease-in-out, border 0.2s ease-in-out, background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
+/* Style for finish button hover at bottom of page */
 .finish-button:hover {
   background-color: white;
   color: #1A1225;
+  border-color: #C8C8C8;
   transition: width 0.2s ease-in-out, border 0.2s ease-in-out, background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }

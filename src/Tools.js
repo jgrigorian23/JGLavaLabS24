@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import './Tools.css';
 
+/* Grab inputs for name and description
+    Named files 'logo(name of company).png' to make it easy to parse
+    Handle click changes button's colors
+*/
 function ToolItem({ name, description }) {
     const [isConnected, setIsConnected] = useState(false);
   
@@ -27,6 +31,7 @@ function ToolItem({ name, description }) {
     );
   }
   
+/* Inputs for all 8 companies */
 function Tools() {
   return (
     <div className="tools-list">

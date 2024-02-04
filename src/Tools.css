@@ -1,3 +1,5 @@
+
+/* Style for general list */
 .tools-list {
     width: 1800px;
     margin-top: 280px;
@@ -8,7 +10,7 @@
     overflow-y: auto;
   }
   
-  /* Style for the list of tools */
+  /* Style for each element of list of tools */
   .tools-list ul {
     list-style: none;
     padding: 0;
@@ -25,7 +27,7 @@
     margin-bottom: 60px;
   }
   
-  /* Style for the tool */
+  /* Style for the tool div/box */
   .tools-list div {
     display: flex;
     flex-direction: column;
@@ -39,26 +41,27 @@
     height: 160px;
   }
   
-  /* Style for the tool image */
+  /* Style for the tool's company image */
   .tools-list img {
     position: relative;
-    max-width: 26.67px;
-    max-height: 26.67x;
+    width: 26.67px;
+    height: 26.67x;
+    object-fit: fill;
     margin-right: 205px;
     margin-top: 20px;
     margin-bottom: 3px;
   }
   
-  /* Style for the tool text */
+  /* Style for the tool text description */
   .tools-list .tool-text {
     text-align: left;
     margin-right: 12px;
-    width: 220px;
+    width: 230px;
     font: Helvetica;
     position: relative;
   }
   
-  /* Style for the h4 element in the tool */
+  /* Style for the title (h4 element) in the tool */
   .tools-list h4 {
     margin-right: 205px;
     color: black;
@@ -70,7 +73,7 @@
     font-weight: 400;
   }
 
-  /* Style for the p elements in the tool */
+  /* Style for other text elements in the tool */
   .tools-list p {
     color: black;
     font-size: 14px;
@@ -79,6 +82,7 @@
     font-weight: 400;
   }
 
+  /* Initial button style */
   .tools-list .tool-button {
     background-color: white;
     font: Helvetica;
@@ -94,9 +98,8 @@
     transform: translate(-50%, 50%);
     transition: width 0.2s ease-in-out, border 0.2s ease-in-out, background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   }
-
-
  
+  /* Clicked button styles */
 .button-connected {
   background-color: lightgreen;
   color: green;
