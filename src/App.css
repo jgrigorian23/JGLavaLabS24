@@ -1,10 +1,29 @@
 .App {
-  
+  text-align: center;
+  overflow-y: auto;
+  height: 100%;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.tools-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  overflow-y: auto;
 }
 
 body {
   background-image: radial-gradient(circle, #EFDEFF, white);
- 
+  overflow-y: auto;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .logo-text {
@@ -19,7 +38,7 @@ body {
 
 .profile-button {
   top: 25px;
-  position: fixed;
+  position: absolute;
   right: 75px;
   width: 52px;
   height: 52px;
@@ -63,22 +82,17 @@ body {
   font: Helvetica;
   font-weight: 400;
   font-size: 48px;
-  position: fixed;
+  position: absolute;
   width: 586px;
   height: 77px;
   top: 259px;
   left: 71px;
+  margin-bottom: 20px;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
@@ -89,15 +103,35 @@ body {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.back-button {
+  position: absolute;
+  margin-top: 800px;
+  left: 80px;
+  width: 112px;
+  height: 56px;
+  font-size: 18px;
+  font: Plus Jakarta Sans;
+  font-weight: 700;
+  color: #1A1225; 
+  background-color: white;
+  border: 1px solid #C8C8C8;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.finish-button {
+  position: absolute;
+  margin-top: 800px;
+  left: 250px;
+  width: 140px;
+  height: 56px;
+  font-size: 18px;
+  font: Plus Jakarta Sans;
+  font-weight: 700;
+  color: white; 
+  background-color: #1A1225;
+  border: 1px solid #1A1225;
+  border-radius: 8px;
+  cursor: pointer;
 }
+

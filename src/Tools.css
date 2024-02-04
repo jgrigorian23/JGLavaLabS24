@@ -1,0 +1,111 @@
+.tools-list {
+    width: 1800px;
+    margin-top: 280px;
+    margin-right: 800px;
+    margin-left: -117px;
+    position: absolute;
+    left: 0;
+    overflow-y: auto;
+  }
+  
+  /* Style for the list of tools */
+  .tools-list ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 70px;
+  }
+  
+  /* Style for each tool item */
+  .tools-list li {
+    margin-right: 60px;
+    margin-bottom: 60px;
+  }
+  
+  /* Style for the tool */
+  .tools-list div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border: 1px solid lightgrey;
+    border-radius: 8px;
+    padding: 10px;
+    width: 100%;
+    width: 290px;
+    height: 160px;
+  }
+  
+  /* Style for the tool image */
+  .tools-list img {
+    max-width: 26.67px;
+    max-height: 26.67x;
+    margin-right: 205px;
+    margin-top: 20px;
+    margin-bottom: 3px;
+  }
+  
+  /* Style for the tool text */
+  .tools-list .tool-text {
+    text-align: left;
+    margin-right: 12px;
+    width: 220px;
+    font: Helvetica;
+    position: relative;
+  }
+  
+  /* Style for the h4 element in the tool */
+  .tools-list h4 {
+    margin-right: 205px;
+    color: black;
+    font-size: 21px;
+    margin-top: 5px;
+    width: 200px;
+    margin-bottom: -5px;
+    font: Helvetica;
+    font-weight: 400;
+  }
+
+  /* Style for the p elements in the tool */
+  .tools-list p {
+    color: black;
+    font-size: 14px;
+    margin-bottom: 10px;
+    font: Helvetica;
+    font-weight: 400;
+  }
+
+  .tools-list .tool-button {
+    background-color: white;
+    font: Helvetica;
+    font-size: 12px;
+    width: 100px;
+    height: 24px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    cursor: pointer;
+    bottom: 110px;
+    left: 140px;
+    position: absolute;
+    transform: translate(-50%, 50%);
+    transition: width 0.2s ease-in-out, border 0.2s ease-in-out, background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  }
+
+
+ 
+.button-connected {
+  background-color: lightgreen;
+  color: green;
+  transition: width 0.2s ease-in-out, border 0.2s ease-in-out, background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.tool-button.button-connected {
+  background-color: lightgreen;
+  border: 1px lightgreen;
+  width: 120px;
+  height: 24px;
+  transition: width 0.2s ease-in-out, border 0.2s ease-in-out, background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}

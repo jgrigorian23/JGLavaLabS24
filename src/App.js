@@ -1,6 +1,9 @@
+import React, { useState } from 'react';
 import './App.css';
+import Tools from './Tools.js';
 
 function App() {
+
   return (
     <div className="App">
       <header className="App-header">
@@ -10,8 +13,15 @@ function App() {
         </button>
       </header>
       <p className="motto-text">Connect your favorite tools.</p>
+      <div className="tools-container">
+        <Tools />
+      </div>
+      <button className="back-button">Back</button>
+      <button className="finish-button">Finish</button>
     </div>
   );
 }
 
 export default App;
+
+
