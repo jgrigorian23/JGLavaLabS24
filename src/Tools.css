@@ -41,6 +41,7 @@
   
   /* Style for the tool image */
   .tools-list img {
+    position: relative;
     max-width: 26.67px;
     max-height: 26.67x;
     margin-right: 205px;
@@ -87,8 +88,8 @@
     border: 1px solid lightgrey;
     border-radius: 5px;
     cursor: pointer;
-    bottom: 110px;
-    left: 140px;
+    bottom: 105px;
+    left: 180px;
     position: absolute;
     transform: translate(-50%, 50%);
     transition: width 0.2s ease-in-out, border 0.2s ease-in-out, background-color 0.2s ease-in-out, color 0.2s ease-in-out;

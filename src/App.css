@@ -2,6 +2,7 @@
   text-align: center;
   overflow-y: auto;
   height: 100%;
+  width: 100%;
 }
 
 html, body {
@@ -98,6 +99,7 @@ body {
 .App-header {
   background-color: white;
   height: 100px;
+  width: 100%;
   align-items: center;
   justify-content: center;
   color: white;
@@ -117,12 +119,19 @@ body {
   border: 1px solid #C8C8C8;
   border-radius: 8px;
   cursor: pointer;
+  transition: width 0.2s ease-in-out, border 0.2s ease-in-out, background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.back-button:hover {
+  background-color: #1A1225;
+  color: white;
+  transition: width 0.2s ease-in-out, border 0.2s ease-in-out, background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
 .finish-button {
   position: absolute;
   margin-top: 800px;
-  left: 250px;
+  left: 215px;
   width: 140px;
   height: 56px;
   font-size: 18px;
@@ -133,5 +142,11 @@ body {
   border: 1px solid #1A1225;
   border-radius: 8px;
   cursor: pointer;
+  transition: width 0.2s ease-in-out, border 0.2s ease-in-out, background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
+.finish-button:hover {
+  background-color: white;
+  color: #1A1225;
+  transition: width 0.2s ease-in-out, border 0.2s ease-in-out, background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
